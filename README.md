@@ -7,6 +7,13 @@ This repository contains PowerShell scripts to help IT support teams automate an
 - `cleanup/` — Disk cleanup and temp file removal
 - `networking/` — Ping tests and basic diagnostics
 - `user-management/` — Add, remove, and modify local users
+## 🖥 GUI Launcher
+
+Run `launch-toolkit.ps1` to open a Windows GUI with buttons to launch key scripts:
+
+```powershell
+.\launch-toolkit.ps1
+
 
 ## 🏁 Usage
 
