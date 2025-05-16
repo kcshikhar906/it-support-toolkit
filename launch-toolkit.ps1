@@ -39,6 +39,14 @@ $userBtn.Text = "👤 Add Local User"
 $userBtn.Top = 130
 $userBtn.Add_Click({ Run-Script ".\user-management\add-local-user.ps1" })
 
+$sysInfoBtn = New-Object System.Windows.Forms.Button
+$sysInfoBtn.Text = "🧠 Check System Info"
+$sysInfoBtn.Top = 180
+$sysInfoBtn.Add_Click({ Run-Script ".\system-info\check-system-info.ps1" })
+
+$form.Controls.Add($sysInfoBtn)
+
+
 # Add to form
 $form.Controls.AddRange(@($cleanupBtn, $pingBtn, $userBtn))
 $form.Controls | ForEach-Object {

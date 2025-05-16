@@ -23,5 +23,6 @@ Run each script with administrator privileges in PowerShell:
 .\cleanup\temp-cleanup.ps1
 | ping-test.ps1 | Tests internet, DNS, and gateway connectivity |
 | add-local-user.ps1 | Adds a new local user account and optionally to Administrators group |
+| check-system-info.ps1 | Displays RAM, CPU, disk usage, OS version, and uptime |
 
 
