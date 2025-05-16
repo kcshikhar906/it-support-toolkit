@@ -14,3 +14,5 @@ Run each script with administrator privileges in PowerShell:
 
 ```powershell
 .\cleanup\temp-cleanup.ps1
+| ping-test.ps1 | Tests internet, DNS, and gateway connectivity |
+
