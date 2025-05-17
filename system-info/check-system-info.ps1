@@ -20,7 +20,7 @@ Write-Host "`nDrives:" -ForegroundColor Cyan
 foreach ($disk in $disks) {
     $used = $disk.Size - $disk.FreeSpace
     $usage = ($used / $disk.Size) * 100
-    Write-Host "$($disk.DeviceID) - $([math]::Round($usage,2))% used (`"{0:N2}`" GB free)" -f ($disk.FreeSpace / 1GB)
+    Write-Host "$($disk.DeviceID) - $([math]::Round($usage,2))% used (`"{0:N2}`" GB free)" ($disk.FreeSpace / 1GB)
 }
 
 Write-Host "`n✅ System information check complete." -ForegroundColor Green
